@@ -7,5 +7,5 @@ function createCircle(radius ){
         }
     };
 }
-const circle = createCircle(1);
+const circle = createCircle(2);
 circle.draw();
