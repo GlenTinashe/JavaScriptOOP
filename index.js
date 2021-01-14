@@ -20,7 +20,21 @@ function Circle(radius){
 //new operator creates  a new object then sets this to the object and then returns the object from the function
 const anotherCircle = new Circle(1);
 
- 
+ //JS allows adding of properties on the fly
+ anotherCircle.location = {x:1}
+ // this statement aboove is exactly the same as the one below
+ circle['location']={x:1}
+
+ //nbracket notation is particularly useful for when dynamically accessing a property name or the property name has special characters like centre-location
+
+ const propertyName = 'location';
+ circle[propertyName]= {x:1}
+
+ // delete operator to dynamically delete a property
+delete circle.location;
+delete circle[location];
+
+ console.log('another circle', anotherCircle);
 
 //value vs reference types
 
