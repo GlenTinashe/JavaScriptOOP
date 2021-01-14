@@ -74,3 +74,21 @@ function increase(number2){
 increase(number2);
 // number = 21 since object is copied by value
 console.log(number2);
+
+//iteration over objects using for in
+//you can use bracket notation to access the value of properties and methods of the objects
+
+
+for (let key in circle){
+    //to display only properties use the typeof operator
+    if(typeof circle[key]!=='function')
+    console.log('key',key, circle[key]);
+}
+const keys = Object.keys(circle)
+
+console.log('keys', keys);
+
+//find if an object has a property or method
+
+if ('radius' in circle)
+    console.log('circle has radius');
